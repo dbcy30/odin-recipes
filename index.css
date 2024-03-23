@@ -3,17 +3,43 @@
 }
 
 body {
-    height: auto;
-    max-width: 750px;
+    margin: 0;
     font-family: "serif";
     background-color: rgb(238, 231, 231);
 }
 
-.flex_container {
+/* Lays contents out one on top of the other */
+.first-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* currently unsure of flex direction */ 
+.second-flex {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+} 
+
+.header {
     text-align: center;
+}
+
+.odin {
+    
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.gallery img {
+    object-fit: cover;
 }
 
 h1 {
@@ -21,31 +47,13 @@ h1 {
     font-size: 2rem;
 }
 
-
-.lasagna {
-    background-image: url(/odin-recipes/recipes/images/lasagna.jpg);
-    background-size: cover;
-}
-
-.spaghetti {
-    background-image: url(/odin-recipes/recipes/images/spaghetti.avif);
-    background-size: cover;
-}
-
-.au_grating_potatoes {
-    background-image: url(/odin-recipes/recipes/images/augratinpotatoes.jpg);
-    background-size: cover;
-}
-
-p {
-    padding: 5rem;
-    width: 80%;
+img {
+    width: 200px;
+    height: 200px;
 }
 
 a {
-    background-color: rgb(255, 248, 246);
-    padding: 1rem;
-    color: black;
-    border: 2px solid black;
+    padding: 5rem;
+    width: 80%;
 }
 
